@@ -1,0 +1,18 @@
+{
+  "id": "123Player",
+  "school": "hogwarts",
+  "name": "bob jones",
+  "interests": {
+    "sport": "lacrosse",
+    "theater": "ABT",
+    "game": "rabbits",
+    "idol groups": ["ive", "sakurazaka", "46", "seventeen"]
+  },
+  "age": 25,
+  "magic": {
+    "fire": {
+      "fireball": 2,
+      "firestar": 10
+    }
+  }
+}
