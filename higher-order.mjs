@@ -1,6 +1,8 @@
 /**
  * Ch 2: Higher order functions, passing functions to functions
  */
+
+// 2.1
 function fib(n) {
   function go(p, curr, next) {
     if (p <= 0) {
@@ -35,3 +37,25 @@ function otherFib(n) {
 // const ans = otherFib(100);
 // console.log(ans);
 // console.timeEnd("recursion");
+
+// 2.2
+function isSorted(A, gt) {
+  function go(n) {
+    if (n + 1 >= A.length) {
+      return true;
+    }
+
+    if (gt(A[n], A[n + 1])) {
+      return false;
+    }
+
+    return go(n + 1);
+  }
+
+  return go(0);
+}
+
+// let ans = isSorted([1, 2, 3], (a, b) => a > b);
+// console.log(ans);
+// ans = isSorted([3, 2, 1], (a, b) => a > b);
+// console.log(ans);
